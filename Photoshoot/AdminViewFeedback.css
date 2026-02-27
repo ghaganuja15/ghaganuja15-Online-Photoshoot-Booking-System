@@ -1,0 +1,78 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* GridView Styles */
+.grid-view {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .grid-view th,
+    .grid-view td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .grid-view th {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+
+    .grid-view tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .grid-view tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .grid-view .command-field {
+        text-align: center;
+    }
+
+        .grid-view .command-field a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            .grid-view .command-field a:hover {
+                text-decoration: underline;
+            }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .grid-view th,
+    .grid-view td {
+        padding: 8px;
+    }
+
+    .grid-view {
+        font-size: 14px;
+    }
+
+        .grid-view .command-field a {
+            font-size: 12px;
+        }
+}

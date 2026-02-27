@@ -1,0 +1,87 @@
+﻿/* Feedback.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #444;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feedback-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+    /* Label styles */
+    .feedback-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    /* Textbox styles */
+    .feedback-form input[type="text"],
+    .feedback-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .feedback-form textarea {
+        resize: vertical;
+    }
+
+    /* Dropdown styles */
+    .feedback-form select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    /* Button styles */
+    .feedback-form input[type="submit"] {
+        background-color: #28a745;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        .feedback-form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+    /* Message status label */
+    .feedback-form #lblMessageStatus {
+        display: block;
+        margin-top: 10px;
+        color: #dc3545;
+        font-weight: bold;
+    }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .feedback-form {
+        width: 80%;
+    }
+}

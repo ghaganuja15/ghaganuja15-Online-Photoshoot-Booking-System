@@ -1,0 +1,88 @@
+﻿/* Home.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.banner-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+    .banner-text h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+    .container h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+.card {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
+}
+
+    .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card h1 {
+        font-size: 1.5em;
+        margin: 15px 0;
+    }
+
+    .card p {
+        font-size: 1em;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+
+.book-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+    .book-now-btn:hover {
+        background-color: #0056b3;
+    }

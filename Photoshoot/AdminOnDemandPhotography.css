@@ -1,0 +1,126 @@
+﻿/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #444;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        font-weight: bold;
+        color: #555;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .form-group textarea {
+        height: 100px;
+        resize: vertical;
+    }
+
+/* Button styles */
+button, .btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover, .btn:hover {
+        background-color: #45a049;
+    }
+
+.form-group .btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* GridView Styling */
+.grid-view {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+    .grid-view th, .grid-view td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    .grid-view th {
+        background-color: #f2f2f2;
+        color: #333;
+    }
+
+    .grid-view td {
+        background-color: #fff;
+        color: #555;
+    }
+
+    .grid-view tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .grid-view img {
+        width: 100px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    /* Delete Button styling in GridView */
+    .grid-view .delete {
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+        .grid-view .delete:hover {
+            background-color: #ff3333;
+        }
+
+/* Responsive design for mobile view */
+@media screen and (max-width: 768px) {
+    .form-group input, .form-group textarea {
+        width: 100%;
+    }
+
+    .grid-view th, .grid-view td {
+        font-size: 12px;
+    }
+}

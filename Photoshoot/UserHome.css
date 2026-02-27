@@ -1,0 +1,64 @@
+﻿body {
+    background-image: url('images/image2.jpg');
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    background-color: #3a2e67;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+
+
+h2 {
+    color: #3a2e67;
+}
+
+.offerings {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    text-align: center;
+}
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+.enquire-btn {
+    background-color: #3a2e67;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    .enquire-btn:hover {
+        background-color: #2b214f;
+    }
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .image-container img {
+        width: 48%; /* Adjust the width as needed */
+        height: auto;
+    }

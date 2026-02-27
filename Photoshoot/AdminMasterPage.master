@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Master Page</title>
+    <link href="adminmaster.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <h1>Admin Dashboard</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><asp:HyperLink ID="lnkAdminHome" runat="server" NavigateUrl="~/AdminHome.aspx">Admin Home</asp:HyperLink></li>
+                <li><asp:HyperLink ID="lnkOnDemand" runat="server" NavigateUrl="~/AdminOnDemandPhotography.aspx">On Demand Photography</asp:HyperLink></li>
+                <li><asp:HyperLink ID="lnkPersonal" runat="server" NavigateUrl="~/AdminPersonalPhotography.aspx">Personal Photography</asp:HyperLink></li>
+                <li><asp:HyperLink ID="lnkOpenEvents" runat="server" NavigateUrl="~/AdminOpenEventsPhotography.aspx">Open Events Photography</asp:HyperLink></li>
+                <li><asp:HyperLink ID="lnkAddGallery" runat="server" NavigateUrl="~/AdminGallery.aspx">Add Gallery</asp:HyperLink></li>
+                <li><asp:HyperLink ID="lnkManageBookings" runat="server" NavigateUrl="~/AdminBookings.aspx">View Bookings</asp:HyperLink></li>
+                <li><asp:HyperLink ID="lnkManageUsers" runat="server" NavigateUrl="~/AdminManageUsers.aspx">Manage Users</asp:HyperLink></li>
+                <li><asp:HyperLink ID="lnkUserFeedback" runat="server" NavigateUrl="~/AdminViewFeedback.aspx">View Feedback</asp:HyperLink></li>
+                <li><asp:HyperLink ID="lnkAdminSignout" runat="server" NavigateUrl="~/AdminSignOut.aspx">Admin SignOut</asp:HyperLink></li>
+            </ul>
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+</body>
+</html>

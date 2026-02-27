@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photography Booking</title>
+    <link rel="stylesheet" type="text/css" href="master.css" />
+    <style type="text/css">
+        .auto-style1 {
+            height: 36px;
+        }
+        .auto-style3 {
+            height: 31px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="SG Photofilms" class="auto-style1">SG PhotoFilms
+                </div>
+                <ul class="nav-links">
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="AboutUs.aspx">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#">Photography Services </a>
+                       <ul class="dropdown-menu">
+                            <li><asp:LinkButton ID="lnkOnDemand" runat="server" OnClick="lnkOnDemand_Click">On Demand Photography</asp:LinkButton></li>
+                            <li><asp:LinkButton ID="lnkPersonal" runat="server" OnClick="lnkPersonal_Click">Personal Photography</asp:LinkButton></li>
+                            <li><asp:LinkButton ID="lnkOpenEvents" runat="server" OnClick="lnkOpenEvents_Click">Open Events Photography</asp:LinkButton></li>
+                        </ul>
+                    </li>
+                    <li><a href="Gallery.aspx">Gallery</a></li> <!-- Added Gallery Link -->
+                    <li><a href="ContactUs.aspx">Contact Us</a></li> 
+                    <li><a href="Feedback.aspx">Feedback</a></li>
+                    <li><a href="SignOut.aspx">SignOut</a></li>
+                     <li><a href="UserProfile.aspx"><img src="images/profile.jpg" alt="User Profile" style="vertical-align: middle; width: 20px; height: 20px;"></a></li>
+                    <li><a href="AdminLogin.aspx">Admin Login</a></li>    
+                </ul>
+               
+            </nav>
+        </header>
+        
+        <div class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <p>© 2025 All rights reserved.</p>
+        </footer>
+    </form>
+</body>
+</html>
